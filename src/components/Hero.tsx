@@ -63,7 +63,7 @@ export function Hero() {
 
             <div className="absolute inset-0 bg-linear-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse" />
             <img
-              src="/src/assets/trung_pic.jpg"
+              src="/assets/trung_pic.jpg"
               alt="Trung Nguyen"
               className="relative w-3/5 max-w-md mx-auto rounded-full shadow-2xl transform hover:scale-105 transition-transform duration-500"
             />
