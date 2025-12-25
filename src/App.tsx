@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Navbar } from "./components/NavBar";
+import { Hero } from "./components/Hero";
+import { About } from "./components/About";
+import { Skills } from "./components/Skills";
+import { Projects } from "./components/Projects";
+import { GitHub } from "./components/GitHub";
+import { Leetcode } from "./components/Leetcode";
+import { Blogs } from "./components/Blogs";
+import { Badges } from "./components/Badges";
+import { Experience } from "./components/Experience";
+import { Certifications } from "./components/Certifications";
+import { Education } from "./components/Education";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+import { LoadingScreen } from "./components/loading/LoadingScreen";
+import { useLoading } from "./hooks/useLoading";
+import { CustomCursor } from "./components/ui/CustomCursor";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const isLoading = useLoading();
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <LoadingScreen isLoading={isLoading} />
+      <div
+        className={`min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-opacity duration-500 ${
+          isLoading ? "opacity-0" : "opacity-100"
+        }`}
+      >
+        <CustomCursor />
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <GitHub />
+        <Leetcode />
+        <Badges />
+        <Blogs />
+        <Experience />
+        <Certifications />
+        <Education />
+        <Contact />
+        <Footer />
+        <Analytics />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
