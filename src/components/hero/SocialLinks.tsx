@@ -6,12 +6,12 @@ import { SiLeetcode } from "react-icons/si"; // LeetCode & HackerRank icons
 
 const links = [
   {
-    href: "https://github.com/amitkumardemo",
+    href: "https://github.com/Trungsherlock",
     icon: <Github className="w-6 h-6 text-gray-900 dark:text-white" />,
     label: "GitHub",
   },
   {
-    href: "https://www.linkedin.com/in/amit-kumar-686196225/",
+    href: "https://www.linkedin.com/in/trung-nguyen-hn2202/",
     icon: <Linkedin className="w-6 h-6 text-[#0077B5]" />,
     label: "LinkedIn",
   },
@@ -20,26 +20,11 @@ const links = [
     icon: <FaWhatsapp className="w-6 h-6 text-[#25D366]" />,
     label: "WhatsApp",
   },
-  // {
-  //   href: "https://x.com/AmitKum5579044",
-  //   icon: <FaXTwitter className="w-6 h-6 text-gray-900 dark:text-white" />,
-  //   label: "Twitter",
-  // },
   {
-    href: "https://leetcode.com/u/Amitkumar90/",
+    href: "https://leetcode.com/u/TrungXO/",
     icon: <SiLeetcode className="w-6 h-6 text-[#FFA116]" />,
     label: "LeetCode",
   },
-  // {
-  //   href: "https://unstop.com/u/amitkum6013",
-  //   icon: <MdEmojiEvents className="w-6 h-6 text-[#800080]" />, // Unstop (using trophy icon)
-  //   label: "Unstop",
-  // },
-  // {
-  //   href: "https://www.hackerrank.com/profile/lbgofficial12345",
-  //   icon: <SiHackerrank className="w-6 h-6 text-[#2EC866]" />,
-  //   label: "HackerRank",
-  // },
 ];
 
 export function SocialLinks() {
