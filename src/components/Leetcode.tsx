@@ -11,7 +11,7 @@ interface LeetCodeProfile {
 
 export function Leetcode() {
   const [profile, setProfile] = useState<LeetCodeProfile | null>(null);
-  const username = "Amitkumar90";
+  const username = "TrungXO";
 
   useEffect(() => {
     const fetchLeetcodeData = async () => {
@@ -69,7 +69,7 @@ export function Leetcode() {
                   href={`https://leetcode.com/u/${username}/`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all"
+                  className="mt-4 inline-block bg-blue-600 text-white! px-4 py-2 rounded-lg hover:bg-blue-700 transition-all"
                 >
                   View My Profile
                 </a>

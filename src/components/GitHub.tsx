@@ -36,12 +36,12 @@ export function GitHub() {
   const [user, setUser] = useState<UserProfile | null>(null);
 
   useEffect(() => {
-    fetch("https://api.github.com/users/amitkumardemo")
+    fetch("https://api.github.com/users/Trungsherlock")
       .then((response) => response.json())
       .then((data: UserProfile) => setUser(data));
 
     fetch(
-      "https://api.github.com/users/amitkumardemo/repos?sort=pushed&direction=desc&per_page=3"
+      "https://api.github.com/users/Trungsherlock/repos?sort=pushed&direction=desc&per_page=3"
     )
       .then((response) => response.json())
       .then((data) =>
@@ -68,7 +68,7 @@ export function GitHub() {
           {/* Card-like container for the GitHub calendar */}
           <div className="w-full p-6 border border-gray-300 dark:border-gray-600 rounded-lg shadow-lg">
             <GitHubCalendar
-              username="amitkumardemo"
+              username="Trungsherlock"
               blockSize={14.6}
               blockMargin={5}
               colorScheme="light"

@@ -48,7 +48,7 @@ export function Navbar() {
     { href: "#github", label: "GitHub" },
     { href: "#leetcode", label: "Leetcode" },
     { href: "#badges", label: "Badges" },
-    { href: "#blogs", label: "Blogs" },
+    // { href: "#blogs", label: "Blogs" },
     { href: "#experience", label: "Experience" },
     { href: "#certifications", label: "Certifications" },
     { href: "#education", label: "Education" },

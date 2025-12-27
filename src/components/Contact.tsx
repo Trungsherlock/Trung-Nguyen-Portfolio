@@ -25,25 +25,25 @@ export function Contact() {
                 className="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               >
                 <Mail className="w-6 h-6" />
-                <span>amitk25783@gmail.com</span>
+                <span>trungnguyenquochn2202@gmail.com</span>
               </a>
               <a
-                href="https://github.com/amitkumardemo"
+                href="https://github.com/Trungsherlock"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               >
                 <Github className="w-6 h-6" />
-                <span>github.com/amitkumardemo</span>
+                <span>github.com/Trungsherlock</span>
               </a>
               <a
-                href="https://www.linkedin.com/in/amit-kumar-686196225/"
+                href="https://www.linkedin.com/in/trung-nguyen-hn2202/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               >
                 <Linkedin className="w-6 h-6" />
-                <span>linkedin.com/in/amit-kumar-686196225</span>
+                <span>linkedin.com/in/trung-nguyen-hn2202</span>
               </a>
             </div>
           </div>

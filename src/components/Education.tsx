@@ -3,23 +3,23 @@ import { EducationCard } from "./ui/EducationCard";
 
 const education = [
   {
-    degree: "B.Tech in Computer Science Engineering (AI & ML)",
-    institution: "JIET Group of Institutions, Jodhpur",
-    period: "2023 - 2027",
-    score: "8.13 CGPA",
+    degree: "Master Degree in Computer Science",
+    institution: "University of Massachusetts Amherst",
+    period: "2024 - 2025",
+    score: "3.93/4.0 GPA",
   },
   {
-    degree: "Senior Secondary (XII)",
-    institution: "C.N College, Muzaffarpur, Bihar",
-    period: "2021 - 2023",
-    score: "72.5%",
+    degree: "Bachelor of Science in Computer Science",
+    institution: "University of Massachusetts Amherst",
+    period: "2021 - 2024",
+    score: "3.91/4.0 GPA",
   },
   {
-    degree: "Secondary (X)",
-    institution: "M High School Baidhyanathpur, Muzaffarpur, Bihar",
-    period: "2020 - 2021",
-    score: "67%",
-  },
+    degree: "High School Diploma",
+    institution: "Hanoi-Amsterdam High School for the Gifted",
+    period: "2018 - 2021",
+    score: "9.4/10.0 GPA",
+  }
 ];
 
 export function Education() {

@@ -71,7 +71,7 @@ export function About() {
 
           <div className="mt-6 flex justify-center">
             <span className="text-sm sm:text-base inline-block bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 px-4 py-2 rounded-lg shadow">
-              🚀 Building production systems that are fast, reliable, and scalable
+              Building production systems that are fast, reliable, and scalable
             </span>
           </div>
         </div>

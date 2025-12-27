@@ -6,45 +6,15 @@ const badges = [
     platform: "LeetCode",
     title: "50 Days Badge 2025",
     image: "https://assets.leetcode.com/static_assets/others/2550.gif",
-    profile: "https://leetcode.com/medal/?showImg=0&id=6205206&isLevel=false",
+    profile: "https://leetcode.com/medal/?showImg=0&id=7734969&isLevel=false",
   },
-  {
-    id: "DCC Jan 2025",
-    platform: "LeetCode",
-    title: "DCC Jan 2025",
-    image: "https://assets.leetcode.com/static_assets/marketing/202501.gif",
-    profile: "https://leetcode.com/medal/?showImg=0&id=6078072&isLevel=false",
-  },
-  {
-    id: "DCC Feb 2025",
-    platform: "LeetCode",
-    title: "DCC Feb 2025",
-    image: "https://assets.leetcode.com/static_assets/marketing/202502.gif",
-    profile: "https://leetcode.com/medal/?showImg=0&id=6325795&isLevel=false",
-  },
-  {
-    id: "DCC March 2025",
-    platform: "LeetCode",
-    title: "DCC March 2025",
-    image: "https://assets.leetcode.com/static_assets/marketing/202503.gif",
-    profile: "https://leetcode.com/medal/?showImg=0&id=6671055&isLevel=false",
-  },
-  {
-    id: "Introduction to Pandas",
-    platform: "LeetCode",
-    title: "Introduction to Pandas",
-    image:
-      "https://assets.leetcode.com/static_assets/others/Introduction_to_Pandas.gif",
-    profile: "https://leetcode.com/medal/?showImg=0&id=6270605&isLevel=false",
-  },
-
   {
     id: "github-YOLO",
     platform: "GitHub",
     title: "YOLO",
     image:
       "https://github.githubassets.com/assets/yolo-default-be0bbff04951.png",
-    profile: "https://github.com/users/amitkumardemo/achievements/yolo",
+    profile: "https://github.com/users/Trungsherlock/achievements/yolo",
   },
   {
     id: "pull-shark",
@@ -52,7 +22,7 @@ const badges = [
     title: "pull-shark",
     image:
       "https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png",
-    profile: "https://github.com/users/amitkumardemo/achievements/pull-shark",
+    profile: "https://github.com/users/Trungsherlock/achievements/pull-shark",
   },
   {
     id: "quickdraw",
@@ -60,37 +30,7 @@ const badges = [
     title: "quickdraw",
     image:
       "https://github.githubassets.com/assets/quickdraw-default-39c6aec8ff89.png",
-    profile: "https://github.com/users/amitkumardemo/achievements/quickdraw",
-  },
-
-  {
-    id: "5 star",
-    platform: "HackerRank",
-    title: "5-Star Java Developer",
-    image: "/assets/java 5.png",
-    profile: "https://www.hackerrank.com/profile/lbgofficial12345",
-  },
-  {
-    id: "5 star",
-    platform: "HackerRank",
-    title: "5-Star Python Developer",
-    image: "/assets/python 5.png",
-    profile: "https://www.hackerrank.com/profile/lbgofficial12345",
-  },
-  {
-    id: "3 star",
-    platform: "HackerRank",
-    title: "3-Star Problem Solver",
-    image: "/assets/proble_solve.png",
-    profile: "https://www.hackerrank.com/profile/lbgofficial12345",
-  },
-
-  {
-    id: "DevPioneer",
-    platform: "DevDisplay",
-    title: "Open Source Contributor",
-    image: "/assets/DevPioneer.gif",
-    profile: "https://www.devdisplay.org/home",
+    profile: "https://github.com/users/Trungsherlock/achievements/quickdraw",
   },
 ];
 
