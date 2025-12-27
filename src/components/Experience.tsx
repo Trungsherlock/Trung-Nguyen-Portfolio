@@ -49,10 +49,10 @@ const experiences = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-20">
+    <section id="experience" className="py-20 bg-white dark:bg-netflix-dark-gray">
       <div className="container mx-auto px-8">
         <SectionTitle>Experience</SectionTitle>
-        <div className="relative border-l-2 border-blue-600 dark:border-blue-500 max-w-5xl mx-auto space-y-10">
+        <div className="relative border-l-2 border-blue-600 dark:border-netflix-red max-w-5xl mx-auto space-y-10">
           {experiences.map((exp, index) => (
             <div key={index}>
               <ExperienceCard {...exp} />

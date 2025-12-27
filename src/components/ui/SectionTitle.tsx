@@ -6,8 +6,11 @@ interface SectionTitleProps {
 
 export function SectionTitle({ children }: SectionTitleProps) {
   return (
-    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-      {children}
+    <h2 className="text-3xl md:text-4xl font-black text-center mb-12 text-gray-900 dark:text-white">
+      <span className="relative inline-block">
+        {children}
+        <span className="absolute -bottom-2 left-0 w-full h-1 bg-netflix-red rounded-full"></span>
+      </span>
     </h2>
   );
 }

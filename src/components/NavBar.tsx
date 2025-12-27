@@ -58,14 +58,14 @@ export function Navbar() {
     <>
       <LoadingScreen isLoading={isLogoAnimating} />
       <nav
-        className={`fixed top-2 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-6xl rounded-2xl
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
                     ${
                       isScrolled
-                        ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md outline outline-blue-600"
-                        : "bg-transparent"
+                        ? "bg-[#141414]/95 backdrop-blur-md shadow-lg"
+                        : "bg-gradient-to-b from-black/80 to-transparent"
                     }`}
       >
-        <div className="flex items-center justify-between h-12 px-4">
+        <div className="container mx-auto flex items-center justify-between h-16 px-6 max-w-7xl">
           {/* Logo */}
           <div
             className="cursor-pointer group"
@@ -139,19 +139,19 @@ export function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex space-x-5 items-center relative">
+          <div className="hidden lg:flex space-x-6 items-center relative">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative text-sm text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:scale-105"
+                className="relative text-sm font-medium text-white/90 hover:text-white transition-colors duration-200"
               >
                 {link.label}
                 {activeSection === link.href.substring(1) && (
                   <motion.div
                     layoutId="underline"
-                    className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400"
-                    transition={{ type: "spring", stiffness: 500, damping: 20 }} // Faster animation
+                    className="absolute -bottom-1 left-0 w-full h-0.5 bg-netflix-red"
+                    transition={{ type: "spring", stiffness: 500, damping: 20 }}
                   />
                 )}
               </Link>
@@ -165,7 +165,7 @@ export function Navbar() {
             <ThemeToggle isDark={isDark} onToggle={toggleTheme} />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700"
+              className="p-2 rounded bg-netflix-dark-gray hover:bg-netflix-gray text-white transition-colors"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -179,13 +179,15 @@ export function Navbar() {
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="lg:hidden bg-white/95 dark:bg-gray-900/95 rounded-b-xl shadow-lg">
+          <div className="lg:hidden bg-netflix-black/98 backdrop-blur-md border-t border-netflix-gray">
             <div className="px-4 pt-2 pb-3 space-y-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`block px-3 py-2 rounded-md text-sm text-center text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800`}
+                  className={`block px-3 py-2 rounded text-sm text-center text-white/90 hover:bg-netflix-dark-gray hover:text-white transition-colors ${
+                    activeSection === link.href.substring(1) ? 'bg-netflix-dark-gray text-white' : ''
+                  }`}
                   onClick={() => {
                     setIsOpen(false);
                   }}

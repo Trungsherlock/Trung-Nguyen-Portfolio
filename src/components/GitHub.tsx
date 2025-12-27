@@ -59,14 +59,14 @@ export function GitHub() {
   }, []);
 
   return (
-    <section id="github" className="py-20">
+    <section id="github" className="py-20 bg-white dark:bg-netflix-dark-gray">
       <div className="container mx-auto max-w-6xl px-8">
         <SectionTitle>GitHub Contributions</SectionTitle>
 
         {/* Contribution Graph */}
         <div className="mb-12 flex flex-col items-center">
           {/* Card-like container for the GitHub calendar */}
-          <div className="w-full p-6 border border-gray-300 dark:border-gray-600 rounded-lg shadow-lg">
+          <div className="w-full p-6 bg-white dark:bg-netflix-dark-gray border border-gray-300 dark:border-netflix-gray rounded-lg shadow-lg netflix-card-hover">
             <GitHubCalendar
               username="Trungsherlock"
               blockSize={14.6}
@@ -94,15 +94,15 @@ export function GitHub() {
               href={repo.html_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="block p-6 bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow hover:shadow-lg transition-transform duration-300 transform hover:scale-105"
+              className="block p-6 bg-gray-200 dark:bg-netflix-dark-gray border border-gray-300 dark:border-netflix-gray rounded-lg shadow hover:shadow-lg transition-transform duration-300 transform hover:scale-105 netflix-card-hover"
             >
-              <h3 className="text-xl font-semibold text-blue-600 dark:text-blue-400">
+              <h3 className="text-xl font-semibold text-blue-600 dark:text-netflix-red">
                 {repo.name}
               </h3>
               <p className="text-gray-600 dark:text-gray-300 line-clamp-3">
                 {repo.description}
               </p>
-              <div className="mt-4 flex items-center justify-between text-gray-500">
+              <div className="mt-4 flex items-center justify-between text-gray-500 dark:text-gray-400">
                 <span>{repo.language}</span>
                 <div className="flex space-x-4">
                   <span>⭐ {repo.stars}</span>
@@ -115,13 +115,13 @@ export function GitHub() {
 
         {/* GitHub Profile Widget */}
         {user && (
-          <div className="flex flex-col md:flex-row items-center justify-between bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg p-6 shadow-lg">
+          <div className="flex flex-col md:flex-row items-center justify-between bg-gray-200 dark:bg-netflix-dark-gray border border-gray-300 dark:border-netflix-gray rounded-lg p-6 shadow-lg netflix-card-hover">
             {/* Avatar & Name */}
             <div className="flex items-center space-x-4">
               <img
                 src={user.avatar_url}
                 alt="GitHub Avatar"
-                className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-blue-600"
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-blue-600 dark:border-netflix-red"
               />
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
@@ -150,7 +150,7 @@ export function GitHub() {
                 href={user.html_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full md:w-auto text-center flex items-center justify-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 hover:scale-105 transition-all mt-3 md:mt-0"
+                className="w-full md:w-auto text-center flex items-center justify-center gap-2 bg-blue-600 dark:bg-netflix-red text-white px-4 py-2 rounded-lg hover:bg-blue-700 dark:hover:bg-netflix-red-hover hover:scale-105 transition-all mt-3 md:mt-0"
               >
                 <Github className="w-5 h-5" /> View Profile
               </a>

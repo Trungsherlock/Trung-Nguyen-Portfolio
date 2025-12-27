@@ -36,7 +36,7 @@ const badges = [
 
 export function Badges() {
   return (
-    <section id="badges" className="py-20">
+    <section id="badges" className="py-20 bg-gray-50 dark:bg-netflix-black">
       <div className="container mx-auto max-w-6xl px-8">
         <SectionTitle>Coding Badges</SectionTitle>
 
@@ -47,7 +47,7 @@ export function Badges() {
               href={badge.profile}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative group flex flex-col items-center justify-center p-5 bg-gray-200 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md hover:shadow-2xl transition-transform duration-300 transform hover:scale-105"
+              className="relative group flex flex-col items-center justify-center p-5 bg-white dark:bg-netflix-dark-gray border border-gray-200 dark:border-netflix-gray rounded-xl shadow-md hover:shadow-2xl transition-transform duration-300 transform hover:scale-105 netflix-card-hover"
             >
               {/* Glow Effect */}
               <div className="absolute inset-0 bg-linear-to-br from-blue-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-20 rounded-xl blur-lg transition-all duration-300" />
